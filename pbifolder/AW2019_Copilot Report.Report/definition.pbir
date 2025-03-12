@@ -1,0 +1,8 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../AW2019_Copilot Report.SemanticModel"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Production ProductCategory","Production ProductSubcategory Production ProductCategory"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.138.1452.0 (24.11)
+
+ref table 'Production ProductCategory'
+ref table DateTableTemplate_204e1446-afff-4ff4-a896-d1a78313b869
+ref table LocalDateTable_402951a7-c840-4f0a-b4ee-3086d7795051
+ref table 'Production ProductSubcategory Production ProductCategory'
+ref table LocalDateTable_a6745a4c-9b22-41d1-91bf-5136e373d706
+ref table LocalDateTable_f2702b96-06d8-4999-bd6c-54903903bc3d
+ref table LocalDateTable_af218aed-372d-4cf4-bc03-5b2170ca37fb
+ref table LocalDateTable_b6dcb4d7-9aeb-4409-88d6-dda88d233dd9
+ref table LocalDateTable_f2bb4c6a-c1ea-42d3-9525-2f31b25903aa
+ref table LocalDateTable_ff183ef7-f541-4ff4-94fa-a2ada4402232
+
+ref cultureInfo en-US
+

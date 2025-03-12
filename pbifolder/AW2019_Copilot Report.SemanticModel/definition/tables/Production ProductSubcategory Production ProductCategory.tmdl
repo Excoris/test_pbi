@@ -1,0 +1,68 @@
+table 'Production ProductSubcategory Production ProductCategory'
+	lineageTag: b3f05f17-d569-4710-a6d4-1f6eb9edae7b
+
+	column ProductSubcategoryID
+		dataType: int64
+		formatString: 0
+		lineageTag: 6602937e-dcf9-43ad-929c-87ab1d298624
+		summarizeBy: count
+		sourceColumn: ProductSubcategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryID
+		dataType: int64
+		formatString: 0
+		lineageTag: cfdfb25b-1671-4651-aefe-9822fdddb8c1
+		summarizeBy: count
+		sourceColumn: ProductCategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 95b0636d-b984-4256-844b-64158c194620
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		lineageTag: f3bb7eb9-e9ac-4deb-a907-ca0584ba0632
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fe37521a-5f05-44e1-953d-2d6293170625
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: 849ec61e-bac4-47f7-8fe5-cc59d75ac747
+			defaultHierarchy: LocalDateTable_a6745a4c-9b22-41d1-91bf-5136e373d706.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Production ProductSubcategory Production ProductCategory' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("VM1\SQLEXPRESS"),
+				    AD2022 = Source{[Name="AD2022"]}[Data],
+				    Production_ProductCategory = AD2022{[Schema="Production",Item="ProductCategory"]}[Data],
+				    #"Expanded Production.ProductSubcategory" = Table.ExpandTableColumn(Production_ProductCategory, "Production.ProductSubcategory", {"ProductSubcategoryID", "ProductCategoryID", "Name", "rowguid", "ModifiedDate", "Production.Product", "Production.ProductCategory"}, {"Production.ProductSubcategory.ProductSubcategoryID", "Production.ProductSubcategory.ProductCategoryID", "Production.ProductSubcategory.Name", "Production.ProductSubcategory.rowguid", "Production.ProductSubcategory.ModifiedDate", "Production.ProductSubcategory.Production.Product", "Production.ProductSubcategory.Production.ProductCategory"}),
+				    #"Production ProductSubcategory Production ProductCategory1" = #"Expanded Production.ProductSubcategory"{0}[Production.ProductSubcategory.Production.ProductCategory],
+				    #"Production ProductSubcategory" = #"Production ProductSubcategory Production ProductCategory1"[Production.ProductSubcategory]
+				in
+				    #"Production ProductSubcategory"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

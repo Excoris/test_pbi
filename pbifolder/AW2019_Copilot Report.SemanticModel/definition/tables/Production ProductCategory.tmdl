@@ -1,0 +1,361 @@
+table 'Production ProductCategory'
+	isHidden
+	lineageTag: 976a708d-abf6-4648-b998-41e96f9a3d76
+
+	column ProductCategoryID
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e3b9017e-c02e-474e-a87e-e0ba67c31132
+		summarizeBy: count
+		sourceColumn: ProductCategoryID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		isHidden
+		lineageTag: 35321f85-abf2-45b5-a154-16f1fc5a6eba
+		summarizeBy: none
+		sourceColumn: Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		isHidden
+		lineageTag: e5e15075-1d4c-4795-b4f4-c3a41bd0b034
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 5b8a976e-2535-4b61-8081-622cb130e5f5
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: fb1a860a-bd13-4386-9f41-a546faf52730
+			defaultHierarchy: LocalDateTable_402951a7-c840-4f0a-b4ee-3086d7795051.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.ProductSubcategoryID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 07ae4eb4-3324-422d-8c57-e87171f69294
+		summarizeBy: count
+		sourceColumn: Production.ProductSubcategory.ProductSubcategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.ProductCategoryID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ef209b8-cc93-41ec-86a3-833c908a1c0d
+		summarizeBy: count
+		sourceColumn: Production.ProductSubcategory.ProductCategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Name'
+		dataType: string
+		lineageTag: 6b5a51a6-933a-4f57-8f14-312ab7eb5494
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.rowguid'
+		dataType: string
+		lineageTag: 012d4f86-dcf3-4345-9f9b-dff5e0c1ea08
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.ModifiedDate'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 09a40e92-6759-4f5b-8d70-657430d852b7
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: 4e4d09e8-d917-48a1-ba19-4f279d601017
+			defaultHierarchy: LocalDateTable_f2702b96-06d8-4999-bd6c-54903903bc3d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.ProductID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ca08357-979a-4c0c-a370-c44303a94ca9
+		summarizeBy: count
+		sourceColumn: Production.ProductSubcategory.Production.Product.ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.Name'
+		dataType: string
+		lineageTag: a55d3434-83fd-4b6e-a862-72c53e84facf
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.ProductNumber'
+		dataType: string
+		lineageTag: a3d082c4-6eb3-4f8b-8c0e-e25fc97dad0f
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.ProductNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.MakeFlag'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 86f6b546-cc56-4cda-9947-dff4738d27db
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.MakeFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.FinishedGoodsFlag'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 599e7e83-fa4f-4926-8ebe-02774d506654
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.FinishedGoodsFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.Color'
+		dataType: string
+		lineageTag: 03e2ce65-f3c6-4307-89a2-bc96f6609eb2
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.Color
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.SafetyStockLevel'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7dc1ae29-58f1-481a-bbc0-9d49dc940d19
+		summarizeBy: sum
+		sourceColumn: Production.ProductSubcategory.Production.Product.SafetyStockLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.ReorderPoint'
+		dataType: int64
+		formatString: 0
+		lineageTag: fcc4d673-87f4-45d9-9869-6092beb5b2d2
+		summarizeBy: sum
+		sourceColumn: Production.ProductSubcategory.Production.Product.ReorderPoint
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.StandardCost'
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: f0aafbfe-9e33-49ec-b0f6-78132a86038c
+		summarizeBy: sum
+		sourceColumn: Production.ProductSubcategory.Production.Product.StandardCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column 'Production.ProductSubcategory.Production.Product.ListPrice'
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 30712921-0401-4190-a5f9-1e3a83c7eb3c
+		summarizeBy: sum
+		sourceColumn: Production.ProductSubcategory.Production.Product.ListPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column 'Production.ProductSubcategory.Production.Product.Size'
+		dataType: string
+		lineageTag: 9ff84ccd-a291-43cd-adb6-48c7dce41c53
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.Size
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.SizeUnitMeasureCode'
+		dataType: string
+		lineageTag: d7d54b5a-a243-4283-9864-578845122775
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.SizeUnitMeasureCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.WeightUnitMeasureCode'
+		dataType: string
+		lineageTag: 0a8e3cbd-7bbf-45a0-a960-b254a786f0ac
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.WeightUnitMeasureCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.Weight'
+		dataType: double
+		lineageTag: fd67a68f-41a7-4a0d-b34c-912b7f67792b
+		summarizeBy: sum
+		sourceColumn: Production.ProductSubcategory.Production.Product.Weight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Production.ProductSubcategory.Production.Product.DaysToManufacture'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0605a308-f859-4e74-9193-bb2438725be8
+		summarizeBy: sum
+		sourceColumn: Production.ProductSubcategory.Production.Product.DaysToManufacture
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.ProductLine'
+		dataType: string
+		lineageTag: bf47b7cb-5489-4df0-8d67-d123dc470628
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.ProductLine
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.Class'
+		dataType: string
+		lineageTag: c00b26ea-af9a-4bc0-ac3c-f8f3d0e8318d
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.Style'
+		dataType: string
+		lineageTag: 636a4fb7-00ad-43b0-a8e6-96dfdd74b005
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.Style
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.ProductSubcategoryID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ad20b6a-4464-488d-b989-bee904942020
+		summarizeBy: count
+		sourceColumn: Production.ProductSubcategory.Production.Product.ProductSubcategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.ProductModelID'
+		dataType: int64
+		formatString: 0
+		lineageTag: be762027-d5d3-4f1a-8059-45687cdfb11e
+		summarizeBy: count
+		sourceColumn: Production.ProductSubcategory.Production.Product.ProductModelID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.SellStartDate'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ea080d06-4ce8-484e-a815-839f54549b2f
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.SellStartDate
+
+		variation Variation
+			isDefault
+			relationship: ab385a31-8520-4370-8ff2-6eabbea57b4f
+			defaultHierarchy: LocalDateTable_af218aed-372d-4cf4-bc03-5b2170ca37fb.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.SellEndDate'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9aa1a12d-2746-434c-9130-4795b8c7f7f3
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.SellEndDate
+
+		variation Variation
+			isDefault
+			relationship: ad23885b-2f59-4b5c-80a7-65b3c4639bab
+			defaultHierarchy: LocalDateTable_b6dcb4d7-9aeb-4409-88d6-dda88d233dd9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.DiscontinuedDate'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9994a59f-c07d-4b65-9613-8392e55f734b
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.DiscontinuedDate
+
+		variation Variation
+			isDefault
+			relationship: 3a316ee9-4da3-48bc-ab0f-12d910cb2c77
+			defaultHierarchy: LocalDateTable_f2bb4c6a-c1ea-42d3-9525-2f31b25903aa.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.rowguid'
+		dataType: string
+		lineageTag: 2a5e0e2f-0908-4572-af80-20cb12e942b1
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Production.ProductSubcategory.Production.Product.ModifiedDate'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 386cab3a-5fb7-442c-85db-aa8dc7a35206
+		summarizeBy: none
+		sourceColumn: Production.ProductSubcategory.Production.Product.ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: d500a55d-ea28-4e66-9153-15d8be1dfc89
+			defaultHierarchy: LocalDateTable_ff183ef7-f541-4ff4-94fa-a2ada4402232.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Production ProductCategory' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("VM1\SQLEXPRESS"),
+				    AD2022 = Source{[Name="AD2022"]}[Data],
+				    Production_ProductCategory = AD2022{[Schema="Production",Item="ProductCategory"]}[Data],
+				    #"Expanded Production.ProductSubcategory" = Table.ExpandTableColumn(Production_ProductCategory, "Production.ProductSubcategory", {"ProductSubcategoryID", "ProductCategoryID", "Name", "rowguid", "ModifiedDate", "Production.Product", "Production.ProductCategory"}, {"Production.ProductSubcategory.ProductSubcategoryID", "Production.ProductSubcategory.ProductCategoryID", "Production.ProductSubcategory.Name", "Production.ProductSubcategory.rowguid", "Production.ProductSubcategory.ModifiedDate", "Production.ProductSubcategory.Production.Product", "Production.ProductSubcategory.Production.ProductCategory"}),
+				    #"Expanded Production.ProductSubcategory.Production.Product" = Table.ExpandTableColumn(#"Expanded Production.ProductSubcategory", "Production.ProductSubcategory.Production.Product", {"ProductID", "Name", "ProductNumber", "MakeFlag", "FinishedGoodsFlag", "Color", "SafetyStockLevel", "ReorderPoint", "StandardCost", "ListPrice", "Size", "SizeUnitMeasureCode", "WeightUnitMeasureCode", "Weight", "DaysToManufacture", "ProductLine", "Class", "Style", "ProductSubcategoryID", "ProductModelID", "SellStartDate", "SellEndDate", "DiscontinuedDate", "rowguid", "ModifiedDate", "Production.BillOfMaterials(ProductID)", "Production.BillOfMaterials(ProductID) 2", "Production.ProductCostHistory", "Production.ProductDocument", "Production.ProductInventory", "Production.ProductListPriceHistory", "Production.ProductModel", "Production.ProductProductPhoto", "Production.ProductReview", "Production.ProductSubcategory", "Production.TransactionHistory", "Production.UnitMeasure(SizeUnitMeasureCode)", "Production.UnitMeasure(WeightUnitMeasureCode)", "Production.WorkOrder", "Purchasing.ProductVendor", "Purchasing.PurchaseOrderDetail", "Sales.ShoppingCartItem", "Sales.SpecialOfferProduct"}, {"Production.ProductSubcategory.Production.Product.ProductID", "Production.ProductSubcategory.Production.Product.Name", "Production.ProductSubcategory.Production.Product.ProductNumber", "Production.ProductSubcategory.Production.Product.MakeFlag", "Production.ProductSubcategory.Production.Product.FinishedGoodsFlag", "Production.ProductSubcategory.Production.Product.Color", "Production.ProductSubcategory.Production.Product.SafetyStockLevel", "Production.ProductSubcategory.Production.Product.ReorderPoint", "Production.ProductSubcategory.Production.Product.StandardCost", "Production.ProductSubcategory.Production.Product.ListPrice", "Production.ProductSubcategory.Production.Product.Size", "Production.ProductSubcategory.Production.Product.SizeUnitMeasureCode", "Production.ProductSubcategory.Production.Product.WeightUnitMeasureCode", "Production.ProductSubcategory.Production.Product.Weight", "Production.ProductSubcategory.Production.Product.DaysToManufacture", "Production.ProductSubcategory.Production.Product.ProductLine", "Production.ProductSubcategory.Production.Product.Class", "Production.ProductSubcategory.Production.Product.Style", "Production.ProductSubcategory.Production.Product.ProductSubcategoryID", "Production.ProductSubcategory.Production.Product.ProductModelID", "Production.ProductSubcategory.Production.Product.SellStartDate", "Production.ProductSubcategory.Production.Product.SellEndDate", "Production.ProductSubcategory.Production.Product.DiscontinuedDate", "Production.ProductSubcategory.Production.Product.rowguid", "Production.ProductSubcategory.Production.Product.ModifiedDate", "Production.ProductSubcategory.Production.Product.Production.BillOfMaterials(Prod", "Production.ProductSubcategory.Production.Product.Production.BillOfMaterials(Pr.1", "Production.ProductSubcategory.Production.Product.Production.ProductCostHistory", "Production.ProductSubcategory.Production.Product.Production.ProductDocument", "Production.ProductSubcategory.Production.Product.Production.ProductInventory", "Production.ProductSubcategory.Production.Product.Production.ProductListPriceHist", "Production.ProductSubcategory.Production.Product.Production.ProductModel", "Production.ProductSubcategory.Production.Product.Production.ProductProductPhoto", "Production.ProductSubcategory.Production.Product.Production.ProductReview", "Production.ProductSubcategory.Production.Product.Production.ProductSubcategory", "Production.ProductSubcategory.Production.Product.Production.TransactionHistory", "Production.ProductSubcategory.Production.Product.Production.UnitMeasure(SizeUnit", "Production.ProductSubcategory.Production.Product.Production.UnitMeasure(WeightUn", "Production.ProductSubcategory.Production.Product.Production.WorkOrder", "Production.ProductSubcategory.Production.Product.Purchasing.ProductVendor", "Production.ProductSubcategory.Production.Product.Purchasing.PurchaseOrderDetail", "Production.ProductSubcategory.Production.Product.Sales.ShoppingCartItem", "Production.ProductSubcategory.Production.Product.Sales.SpecialOfferProduct"})
+				in
+				    #"Expanded Production.ProductSubcategory.Production.Product"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
