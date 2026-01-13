@@ -13,488 +13,6 @@
     "sourceQueryCulture": "en-US",
     "tables": [
       {
-        "name": "Date",
-        "sourceLineageTag": "[dbo].[Date]",
-        "columns": [
-          {
-            "name": "DateID",
-            "dataType": "int64",
-            "sourceColumn": "DateID",
-            "formatString": "0",
-            "sourceProviderType": "int",
-            "sourceLineageTag": "DateID",
-            "summarizeBy": "sum",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "Date",
-            "dataType": "dateTime",
-            "sourceColumn": "Date",
-            "formatString": "General Date",
-            "sourceProviderType": "datetime2",
-            "sourceLineageTag": "Date",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DateBKey",
-            "dataType": "string",
-            "sourceColumn": "DateBKey",
-            "sourceProviderType": "char",
-            "sourceLineageTag": "DateBKey",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DayOfMonth",
-            "dataType": "string",
-            "sourceColumn": "DayOfMonth",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "DayOfMonth",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DaySuffix",
-            "dataType": "string",
-            "sourceColumn": "DaySuffix",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "DaySuffix",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DayName",
-            "dataType": "string",
-            "sourceColumn": "DayName",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "DayName",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DayOfWeek",
-            "dataType": "string",
-            "sourceColumn": "DayOfWeek",
-            "sourceProviderType": "char",
-            "sourceLineageTag": "DayOfWeek",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DayOfWeekInMonth",
-            "dataType": "string",
-            "sourceColumn": "DayOfWeekInMonth",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "DayOfWeekInMonth",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DayOfWeekInYear",
-            "dataType": "string",
-            "sourceColumn": "DayOfWeekInYear",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "DayOfWeekInYear",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DayOfQuarter",
-            "dataType": "string",
-            "sourceColumn": "DayOfQuarter",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "DayOfQuarter",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "DayOfYear",
-            "dataType": "string",
-            "sourceColumn": "DayOfYear",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "DayOfYear",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "WeekOfMonth",
-            "dataType": "string",
-            "sourceColumn": "WeekOfMonth",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "WeekOfMonth",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "WeekOfQuarter",
-            "dataType": "string",
-            "sourceColumn": "WeekOfQuarter",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "WeekOfQuarter",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "WeekOfYear",
-            "dataType": "string",
-            "sourceColumn": "WeekOfYear",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "WeekOfYear",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "Month",
-            "dataType": "string",
-            "sourceColumn": "Month",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "Month",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "MonthName",
-            "dataType": "string",
-            "sourceColumn": "MonthName",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "MonthName",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "MonthOfQuarter",
-            "dataType": "string",
-            "sourceColumn": "MonthOfQuarter",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "MonthOfQuarter",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "Quarter",
-            "dataType": "string",
-            "sourceColumn": "Quarter",
-            "sourceProviderType": "char",
-            "sourceLineageTag": "Quarter",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "QuarterName",
-            "dataType": "string",
-            "sourceColumn": "QuarterName",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "QuarterName",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "Year",
-            "dataType": "string",
-            "sourceColumn": "Year",
-            "sourceProviderType": "char",
-            "sourceLineageTag": "Year",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "YearName",
-            "dataType": "string",
-            "sourceColumn": "YearName",
-            "sourceProviderType": "char",
-            "sourceLineageTag": "YearName",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "MonthYear",
-            "dataType": "string",
-            "sourceColumn": "MonthYear",
-            "sourceProviderType": "char",
-            "sourceLineageTag": "MonthYear",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "MMYYYY",
-            "dataType": "string",
-            "sourceColumn": "MMYYYY",
-            "sourceProviderType": "char",
-            "sourceLineageTag": "MMYYYY",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "FirstDayOfMonth",
-            "dataType": "dateTime",
-            "sourceColumn": "FirstDayOfMonth",
-            "formatString": "General Date",
-            "sourceProviderType": "date",
-            "sourceLineageTag": "FirstDayOfMonth",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "LastDayOfMonth",
-            "dataType": "dateTime",
-            "sourceColumn": "LastDayOfMonth",
-            "formatString": "General Date",
-            "sourceProviderType": "date",
-            "sourceLineageTag": "LastDayOfMonth",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "FirstDayOfQuarter",
-            "dataType": "dateTime",
-            "sourceColumn": "FirstDayOfQuarter",
-            "formatString": "General Date",
-            "sourceProviderType": "date",
-            "sourceLineageTag": "FirstDayOfQuarter",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "LastDayOfQuarter",
-            "dataType": "dateTime",
-            "sourceColumn": "LastDayOfQuarter",
-            "formatString": "General Date",
-            "sourceProviderType": "date",
-            "sourceLineageTag": "LastDayOfQuarter",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "FirstDayOfYear",
-            "dataType": "dateTime",
-            "sourceColumn": "FirstDayOfYear",
-            "formatString": "General Date",
-            "sourceProviderType": "date",
-            "sourceLineageTag": "FirstDayOfYear",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "LastDayOfYear",
-            "dataType": "dateTime",
-            "sourceColumn": "LastDayOfYear",
-            "formatString": "General Date",
-            "sourceProviderType": "date",
-            "sourceLineageTag": "LastDayOfYear",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "IsHolidayUSA",
-            "dataType": "boolean",
-            "sourceColumn": "IsHolidayUSA",
-            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
-            "sourceProviderType": "bit",
-            "sourceLineageTag": "IsHolidayUSA",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "IsWeekday",
-            "dataType": "boolean",
-            "sourceColumn": "IsWeekday",
-            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
-            "sourceProviderType": "bit",
-            "sourceLineageTag": "IsWeekday",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          },
-          {
-            "name": "HolidayUSA",
-            "dataType": "string",
-            "sourceColumn": "HolidayUSA",
-            "sourceProviderType": "varchar",
-            "sourceLineageTag": "HolidayUSA",
-            "summarizeBy": "none",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ]
-          }
-        ],
-        "partitions": [
-          {
-            "name": "{{Partition_Name}}",
-            "mode": "directLake",
-            "source": {
-              "type": "entity",
-              "entityName": "Date",
-              "expressionSource": "DatabaseQuery",
-              "schemaName": "dbo"
-            }
-          }
-        ],
-        "annotations": [
-          {
-            "name": "IsTableInBiModel",
-            "value": "True"
-          }
-        ]
-      },
-      {
         "name": "Date-Clone",
         "sourceLineageTag": "[dbo].[Date-Clone]",
         "columns": [
@@ -973,6 +491,488 @@
           {
             "name": "IsTableInBiModel",
             "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "sourceLineageTag": "[dbo].[Date]",
+        "columns": [
+          {
+            "name": "DateID",
+            "dataType": "int64",
+            "sourceColumn": "DateID",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "DateID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DateBKey",
+            "dataType": "string",
+            "sourceColumn": "DateBKey",
+            "sourceProviderType": "char",
+            "sourceLineageTag": "DateBKey",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayOfMonth",
+            "dataType": "string",
+            "sourceColumn": "DayOfMonth",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DaySuffix",
+            "dataType": "string",
+            "sourceColumn": "DaySuffix",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DaySuffix",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayName",
+            "dataType": "string",
+            "sourceColumn": "DayName",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DayName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayOfWeek",
+            "dataType": "string",
+            "sourceColumn": "DayOfWeek",
+            "sourceProviderType": "char",
+            "sourceLineageTag": "DayOfWeek",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayOfWeekInMonth",
+            "dataType": "string",
+            "sourceColumn": "DayOfWeekInMonth",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DayOfWeekInMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayOfWeekInYear",
+            "dataType": "string",
+            "sourceColumn": "DayOfWeekInYear",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DayOfWeekInYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayOfQuarter",
+            "dataType": "string",
+            "sourceColumn": "DayOfQuarter",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DayOfQuarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayOfYear",
+            "dataType": "string",
+            "sourceColumn": "DayOfYear",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DayOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "WeekOfMonth",
+            "dataType": "string",
+            "sourceColumn": "WeekOfMonth",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "WeekOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "WeekOfQuarter",
+            "dataType": "string",
+            "sourceColumn": "WeekOfQuarter",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "WeekOfQuarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "WeekOfYear",
+            "dataType": "string",
+            "sourceColumn": "WeekOfYear",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "WeekOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "sourceColumn": "Month",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Month",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MonthName",
+            "dataType": "string",
+            "sourceColumn": "MonthName",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "MonthName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MonthOfQuarter",
+            "dataType": "string",
+            "sourceColumn": "MonthOfQuarter",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "MonthOfQuarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Quarter",
+            "dataType": "string",
+            "sourceColumn": "Quarter",
+            "sourceProviderType": "char",
+            "sourceLineageTag": "Quarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "QuarterName",
+            "dataType": "string",
+            "sourceColumn": "QuarterName",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "QuarterName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "dataType": "string",
+            "sourceColumn": "Year",
+            "sourceProviderType": "char",
+            "sourceLineageTag": "Year",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "YearName",
+            "dataType": "string",
+            "sourceColumn": "YearName",
+            "sourceProviderType": "char",
+            "sourceLineageTag": "YearName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MonthYear",
+            "dataType": "string",
+            "sourceColumn": "MonthYear",
+            "sourceProviderType": "char",
+            "sourceLineageTag": "MonthYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MMYYYY",
+            "dataType": "string",
+            "sourceColumn": "MMYYYY",
+            "sourceProviderType": "char",
+            "sourceLineageTag": "MMYYYY",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FirstDayOfMonth",
+            "dataType": "dateTime",
+            "sourceColumn": "FirstDayOfMonth",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "FirstDayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "LastDayOfMonth",
+            "dataType": "dateTime",
+            "sourceColumn": "LastDayOfMonth",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "LastDayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FirstDayOfQuarter",
+            "dataType": "dateTime",
+            "sourceColumn": "FirstDayOfQuarter",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "FirstDayOfQuarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "LastDayOfQuarter",
+            "dataType": "dateTime",
+            "sourceColumn": "LastDayOfQuarter",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "LastDayOfQuarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FirstDayOfYear",
+            "dataType": "dateTime",
+            "sourceColumn": "FirstDayOfYear",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "FirstDayOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "LastDayOfYear",
+            "dataType": "dateTime",
+            "sourceColumn": "LastDayOfYear",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "LastDayOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IsHolidayUSA",
+            "dataType": "boolean",
+            "sourceColumn": "IsHolidayUSA",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "IsHolidayUSA",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IsWeekday",
+            "dataType": "boolean",
+            "sourceColumn": "IsWeekday",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "IsWeekday",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HolidayUSA",
+            "dataType": "string",
+            "sourceColumn": "HolidayUSA",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "HolidayUSA",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Date",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
           }
         ]
       },

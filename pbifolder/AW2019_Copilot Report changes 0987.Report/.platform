@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "AW2019_Copilot Report changes 0987",
+    "description": "test"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d7dda77f-3713-b91f-4e83-ebc1e3b50636"
+  }
+}

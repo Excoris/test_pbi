@@ -1,0 +1,9 @@
+expression 'DirectLake - testoop' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/e7726c0f-dd6e-4b36-9268-6d99914ed121/7d3ff556-9739-4f51-8569-9e4fd4882a10", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: a6eb38d8-7d08-471a-bb51-60c6ecb83f58
+
+	annotation PBI_IncludeFutureArtifacts = False
+

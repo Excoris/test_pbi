@@ -4,4 +4,3 @@ CREATE TABLE [dbo].[Medallion] (
 	[MedallionBKey] varchar(50) NOT NULL, 
 	[MedallionCode] varchar(50) NULL
 );
-

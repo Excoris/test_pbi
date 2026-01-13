@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Dp700"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ddc58204-f4ab-b1af-42a3-4e7bdd6cd091"
+  }
+}

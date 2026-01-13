@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/orgapp/definition/orgAppDefinition/1.0.0/schema.json",
+  "settings": {},
+  "elements": [
+    {
+      "elementType": "item",
+      "elementId": "83f4c999-8a1b-44ee-a2b4-baaa925823d1",
+      "itemType": "Report",
+      "itemLogicalId": "06836b0b-5de4-bc35-48df-df6627b399f8",
+      "displayName": "AW2019_Copilot Report"
+    },
+    {
+      "elementType": "item",
+      "elementId": "526179ac-78b7-4e71-9bd4-3398481b3980",
+      "itemType": "Report",
+      "itemLogicalId": "d7dda77f-3713-b91f-4e83-ebc1e3b50636",
+      "displayName": "AW2019_Copilot Report changes 0987"
+    },
+    {
+      "elementType": "link",
+      "elementId": "5bba5d70-e60b-452d-8ea2-2a1a50a81b6d",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=27b399f8-df66-48df-bc35-5de406836b0b&autoAuth=true&ctid=611c0984-8feb-4e66-8a8c-0734b1571503",
+      "linkType": "embedded",
+      "displayName": "embed"
+    },
+    {
+      "elementType": "item",
+      "elementId": "edd5ca55-d03f-4e0d-b8fd-08b5229e4b42",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "78f4a8c6-f2e6-b4b0-40c2-7ef4d3849205",
+      "displayName": "83f4c999-8a1b-44ee-a2b4-baaa925823d1"
+    },
+    {
+      "elementType": "item",
+      "elementId": "577468fc-5152-490c-895e-d5976a21e5a7",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "089ef202-3e17-8b0b-401e-cd6ba4946515",
+      "displayName": "526179ac-78b7-4e71-9bd4-3398481b3980"
+    }
+  ]
+}

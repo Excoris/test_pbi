@@ -33,4 +33,3 @@ CREATE TABLE [dbo].[Date] (
 	[IsWeekday] bit NULL, 
 	[HolidayUSA] varchar(50) NULL
 );
-
