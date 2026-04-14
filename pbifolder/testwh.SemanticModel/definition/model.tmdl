@@ -1,0 +1,24 @@
+model 535e905e-124d-4763-a171-8e0080461a88
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["exec_requests_history","long_running_queries","frequently_run_queries","exec_sessions_history","vw_PaymentAnalysis","Date","HackneyLicense","Trip","Weather","Geography","Time","Medallion","Date-Clone"]
+
+annotation SourceLineageTagType = DatabaseFullyQualifiedName
+
+ref table vw_PaymentAnalysis
+ref table Date
+ref table HackneyLicense
+ref table Trip
+ref table Weather
+ref table Geography
+ref table Time
+ref table Medallion
+

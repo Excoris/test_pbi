@@ -10,4 +10,3 @@ CREATE TABLE [dbo].[Time] (
 	[DayTimeBucketGroupKey] int NOT NULL, 
 	[DayTimeBucket] varchar(100) NOT NULL
 );
-

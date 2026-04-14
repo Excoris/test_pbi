@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "5f277b4c57ad81bab25d",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7474ba56480e8912c1a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":673.0699088145897,\"height\":123.5258358662614,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"Production ProductSubcategory Production ProductCategory.Name\"},{\"queryRef\":\"CountNonNull(Production ProductSubcategory Production ProductCategory.ProductCategoryID)\"},{\"queryRef\":\"CountNonNull(Production ProductSubcategory Production ProductCategory.ProductSubcategoryID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Production ProductSubcategory Production ProductCategory\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"ModifiedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"ModifiedDate Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"ModifiedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"ModifiedDate Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"ModifiedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"ModifiedDate Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"ModifiedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Production ProductSubcategory Production ProductCategory.ModifiedDate.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"ModifiedDate Day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Name\"},\"Name\":\"Production ProductSubcategory Production ProductCategory.Name\",\"NativeReferenceName\":\"Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ProductCategoryID\"}},\"Function\":5},\"Name\":\"CountNonNull(Production ProductSubcategory Production ProductCategory.ProductCategoryID)\",\"NativeReferenceName\":\"Count of ProductCategoryID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ProductSubcategoryID\"}},\"Function\":5},\"Name\":\"CountNonNull(Production ProductSubcategory Production ProductCategory.ProductSubcategoryID)\",\"NativeReferenceName\":\"Count of ProductSubcategoryID\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 123.53,
+          "width": 673.07,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

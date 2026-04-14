@@ -1,0 +1,56 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2},\"customTheme\":{\"name\":\"Copilot_Theme3699846797023052.json\",\"version\":\"5.60\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "Copilot_Theme3699846797023052.json",
+            "path": "Copilot_Theme3699846797023052.json",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1875b69ada75e9ae4905",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"639353ec220ebd8883a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.974811083123425,\"y\":0,\"z\":0,\"width\":742.6700251889168,\"height\":454.3073047858942,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"publicholidays.countryRegionCode\"},{\"queryRef\":\"publicholidays.holidayName\"},{\"queryRef\":\"publicholidays.countryOrRegion\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"publicholidays\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"countryRegionCode\"},\"Name\":\"publicholidays.countryRegionCode\",\"NativeReferenceName\":\"countryRegionCode\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"holidayName\"},\"Name\":\"publicholidays.holidayName\",\"NativeReferenceName\":\"holidayName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"countryOrRegion\"},\"Name\":\"publicholidays.countryOrRegion\",\"NativeReferenceName\":\"countryOrRegion\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 454.31,
+          "width": 742.67,
+          "x": 9.97,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Copilot_Theme3699846797023052.json"
+}

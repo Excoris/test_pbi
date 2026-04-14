@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AW2019_Copilot Report changes 0987"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "089ef202-3e17-8b0b-401e-cd6ba4946515"
+  }
+}

@@ -1,0 +1,84 @@
+table Geography
+	lineageTag: 72ae4b5d-f79b-4b91-bee0-a24b38532957
+	sourceLineageTag: [dbo].[Geography]
+
+	column GeographyID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: dd711e99-b7d1-4607-bbaa-ead106400d0c
+		sourceLineageTag: GeographyID
+		summarizeBy: sum
+		sourceColumn: GeographyID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZipCodeBKey
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c14ba90c-6a78-42ef-a28a-f8ef9b50e1cb
+		sourceLineageTag: ZipCodeBKey
+		summarizeBy: none
+		sourceColumn: ZipCodeBKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column County
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e18d495d-dc06-44ab-afcf-a31e28c9bce7
+		sourceLineageTag: County
+		summarizeBy: none
+		sourceColumn: County
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0cef8f95-e69c-49c5-9406-3c1e0eec103e
+		sourceLineageTag: City
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: cda55b68-5dd3-4d82-897d-52309d210eb1
+		sourceLineageTag: State
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c44a731d-7f8d-4140-9401-431137db6988
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZipCode
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 3b74851f-6905-443b-801c-4d10ac317b39
+		sourceLineageTag: ZipCode
+		summarizeBy: none
+		sourceColumn: ZipCode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Geography-9d3c58ac-8046-40ee-af02-43a7b1a15095 = entity
+		mode: directLake
+		source
+			entityName: Geography
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

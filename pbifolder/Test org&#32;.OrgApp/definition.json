@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/orgapp/definition/orgAppDefinition/1.0.0/schema.json",
+  "settings": {},
+  "elements": [
+    {
+      "elementType": "item",
+      "elementId": "24fb1549-d646-454d-99ea-7129eab3c5fc",
+      "itemType": "Report",
+      "itemLogicalId": "06836b0b-5de4-bc35-48df-df6627b399f8",
+      "displayName": "AW2019_Copilot Report"
+    },
+    {
+      "elementType": "item",
+      "elementId": "9120435d-a9a1-4f22-9629-1ffb56ec5cad",
+      "itemType": "Report",
+      "itemLogicalId": "d7dda77f-3713-b91f-4e83-ebc1e3b50636",
+      "displayName": "AW2019_Copilot Report changes 0987"
+    },
+    {
+      "elementType": "item",
+      "elementId": "92129fb3-1cf9-4bbe-8330-0e311d003f69",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "78f4a8c6-f2e6-b4b0-40c2-7ef4d3849205",
+      "displayName": "24fb1549-d646-454d-99ea-7129eab3c5fc"
+    },
+    {
+      "elementType": "item",
+      "elementId": "3c4f5751-6333-4f95-ac81-a04392d1566f",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "089ef202-3e17-8b0b-401e-cd6ba4946515",
+      "displayName": "9120435d-a9a1-4f22-9629-1ffb56ec5cad"
+    }
+  ]
+}

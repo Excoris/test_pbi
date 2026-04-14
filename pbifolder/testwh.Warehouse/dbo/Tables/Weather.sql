@@ -5,4 +5,3 @@ CREATE TABLE [dbo].[Weather] (
 	[PrecipitationInches] float NOT NULL, 
 	[AvgTemperatureFahrenheit] float NOT NULL
 );
-

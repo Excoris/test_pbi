@@ -8,4 +8,3 @@ CREATE TABLE [dbo].[Geography] (
 	[Country] varchar(50) NULL, 
 	[ZipCode] varchar(50) NULL
 );
-

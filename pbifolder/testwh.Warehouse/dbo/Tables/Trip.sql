@@ -24,4 +24,3 @@ CREATE TABLE [dbo].[Trip] (
 	[TollsAmount] decimal(18,0) NULL, 
 	[TotalAmount] decimal(18,0) NULL
 );
-
