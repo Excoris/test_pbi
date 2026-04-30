@@ -1,0 +1,5 @@
+relationship 088d2780-f123-4830-ade9-b44d422f2bb3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sheet1.Date
+	toColumn: LocalDateTable_0b8a0e85-3c9e-4d6c-9886-1330b53b23e2.Date
+

@@ -1,0 +1,14 @@
+expression 'st Parameter1' = #datetime(2014, 1, 6, 0, 0, 0) meta [IsParameterQuery=true, Type="DateTime", IsParameterQueryRequired=true]
+	lineageTag: fdacee2d-d39c-4fbe-89d0-5dd3f736dcf9
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = DateTime
+
+expression 'en Parameter1' = #datetime(2014, 10, 1, 0, 0, 0) meta [IsParameterQuery=true, Type="DateTime", IsParameterQueryRequired=true]
+	lineageTag: 0c0d9197-1ede-44ea-a1bc-fc13aed06bb7
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = DateTime
+
